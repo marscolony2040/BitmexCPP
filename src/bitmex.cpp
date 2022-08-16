@@ -8,20 +8,9 @@
 
 #include <iostream>
 
-#include <cpprest/ws_client.h>
 
 
-#include <boost/property_tree/json_parser.hpp>
-#include <boost/foreach.hpp>
-#include "/usr/include/boost/variant.hpp"
-#include <boost/property_tree/ptree.hpp>
-#include <boost/algorithm/string.hpp>
-
-
-using namespace web;
-using namespace web::websockets::client;
-
-bitmex::bitmex(std::string key, std::string secret, int window):auth(key, secret)
+bitmex::bitmex(std::string key, std::string secret):auth(key, secret)
 {
 	apikey = key;
 	apisecret = secret;

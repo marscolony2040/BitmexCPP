@@ -23,7 +23,7 @@ class bitmex
 		std::vector<std::vector<std::string>> blank_vec;
 
 	public:
-		bitmex(std::string key, std::string secret, int window);
+		bitmex(std::string key, std::string secret);
 
         CURL *curl = curl_easy_init();
 	    CURLcode res;

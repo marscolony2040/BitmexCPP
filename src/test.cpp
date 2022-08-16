@@ -15,9 +15,8 @@ int main()
 {
 	std::string key = "";
 	std::string secret = "";
-
-
-	bitmex client(key, secret, 20);
+	
+	bitmex client(key, secret);
 	
 	std::cout << client.account("XBt") << std::endl;
 
